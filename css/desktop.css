@@ -1,0 +1,364 @@
+@charset "UTF-8";
+/* CSS Document */
+/* sets layout for body */
+body {
+	background:rgb(250,250,250) url("../images/background.jpg");
+	background-size:cover;
+	text-align:center;
+}
+/* id stuff change background */
+#stuff {
+	background-image:url("../images/background2.jpg");
+	border-radius:150px;
+}
+/* don't need */
+#container {
+	text-align:center;
+}
+/* import font form file */
+@font-face
+{
+   src:url(../fonts/Dyslexie.ttf);
+   font-family:"dyslexie";
+}
+/* layout the pictures right side */
+.pic {
+	height:10em;
+	width:10em;
+	position:relative;
+	right:15.5em;
+	border:5px solid #0F0;
+	box-shadow:1px 1px 2px #060 inset;
+	transform:rotate(-5deg);
+}
+/*  layout pictures on left side*/
+.pic2 {
+	height:10em;
+	width:10em;
+	position:relative;
+	left:15.5em;
+	border:5px solid #0F0;
+	box-shadow:1px 1px 2px #060 inset;
+	transform:rotate(-5deg);
+}
+/*  when   picutrers are hover*/
+.pic:hover {
+	-webkit-transform:rotate(360deg); /* why safari */
+	transform:rotate(355deg);
+	transition:all 0.5s ease;
+}
+.pic2:hover {
+	-webkit-transform:rotate(360deg); /* why safari */
+	transform:rotate(355deg);
+	transition:all 0.5s ease;
+}
+/* font on page*/
+a,p,h1,h2,h3 {
+	font-size:1.5em;
+}
+/*footer */
+#footer {
+	margin-top:0.75em;
+	position: fixed;
+    bottom: 0;
+    width: 100%;
+	font-size:0.8em;
+	background:rgba(200,200,200,0.3);
+}
+/* headers */
+h1 {
+	font-family: 'Playball', cursive;
+	font-size:2.2em;
+}
+h2 {
+	font:2.0em 'PT Serif', serif;
+	padding-bottom:0.7em;
+	margin-top:-0.7em;
+	padding:1em;
+}
+/* pargraphts*/
+p {
+	font-family:"dyslexie";
+}
+
+/* nav hover effect*/
+body.b1 a.current1:hover,
+body.b2 a.current2:hover,
+body.b3 a.current3:hover,
+body.b4 a.current4:hover,
+body.b5 a.current5:hover,
+body.b6 a.current6:hover,
+body.b7 a.current7:hover,
+body.b8 a.current8:hover,
+body.b9 a.current9:hover {
+	color:#CF0;
+}
+/* unity player */
+#unityPlayer
+{
+	margin:1em 0 1em 0;
+	position:relative;
+	left:13em;
+	bottom:2em;
+	padding:2em 0;
+}
+
+/* first children of content*/
+#content > h2 {
+	font-size:2.2em;
+}
+/* class of me */
+.me {
+	height:25em;
+	width:25em;
+}
+/* last p in content*/
+#content p:last-child {
+	margin-bottom:1.5em;
+}
+/* samething for imgs */
+#content img:last-child {
+	margin-bottom:2.5em;
+}
+video {
+	height:25em;
+	width:25em;
+	border:none;
+}
+.images {
+	height:25em;
+	width:25em;
+}
+.images:hover {
+	-webkit-transform:rotate(360deg); /* why safari */
+	transform:rotate(355deg);
+	transition:all 0.5s ease;
+}
+/* code tthat is display in  input*/
+.code {
+	font-size:2.3em;
+}
+/* code is't selft*/
+.java {
+	overflow:auto;
+	height:250px;
+	font-size:1.2em;
+	background:#000;
+	color:#0F0;
+	width:650px;
+	margin:0.5em 0 1.5em 0;
+	position:relative;
+	left:23em;
+}
+.javah {
+	margin-top:-1.2em !important;
+}
+/* set pa class */
+.pa1,.pa2 ,.pa3,.pa4 {
+	border-radius:9999px;
+	background:rgba(0,235,0,0.7);
+	-webkit-transform:rotate(360deg); /* why safari */
+	transform:scale(0.3);
+	transition:all 0.5s ease;
+	margin:-11em -13em 2.5em -13em;
+	text-align:center;
+}
+.pa1:hover {
+	-webkit-transform:scale(0.5);
+	transform:scale(0.5);
+}
+.pa2:hover {
+	-webkit-transform:scale(1);
+	transform:scale(0.6);
+}
+.pa3:hover {
+	-webkit-transform:scale(1);
+	transform:scale(0.6);
+}
+.pa4:hover {
+	-webkit-transform:scale(7);
+	transform:scale(0.7);
+}
+.pa2 {
+	margin:-15em 0;
+}
+.pa4 {
+	position:relative;
+}
+p,h1,h2 {
+	color:#fff;
+}
+/* form project 2 */
+/* style labels*/
+#emailer label {
+	font-family:"dyslexie";
+	font-size:0.8em;
+	font-weight:bold;
+	position:absolute;
+	margin-top:12px;
+	left:42em;
+}
+/* style input*/
+#emailer input,
+#emailer textarea {
+	height:2.5em;
+	margin:1em 0;
+	width:20em;
+	position:relative;
+	box-shadow:1px 1px 3px #FFF;
+	border-radius:5px 10px 5px 10px;
+	background:#999;
+	left:5em;
+}
+#emailer input:hover,
+#emailer textarea:hover {
+	background:#999;
+}
+
+#emailer input:focus,
+#emailer textarea:focus {
+	border-color:#0F0;
+	background-color:#CCC;
+}
+#buttons input {
+	font-size:0.8m;
+	background:#900;
+	color:#9F0;
+	padding:5px 10px;
+	border-radius:10px 5px 10px 5px;
+	position:relative;
+	margin-bottom:4.5em;
+}
+
+#buttons input:hover {
+	background:#00F;
+	cursor:pointer;
+}
+fieldset {
+	border:none;
+}
+/* table and contents insdie*/
+table,th, td {
+    border: 0.3em solid black;
+	padding:0.2em 0;
+	border-radius:10px 5px 10px 5px;
+}
+table th {
+	text-shadow:2px 2px 1xp #FFF;
+	position:relative;
+	left:9.5em;
+}
+/* table all by its self*/
+table {
+	text-align:center;
+	font:1.2em "dyslexie";
+	position:relative;
+	left:550px;
+	margin:0.7em 0 2.5em 0;
+	color:#FFF;
+}
+/* nav menu  styles*/
+.menu{
+	overflow: hidden;
+	position: relative;
+	left: 0;
+}
+
+.menu-open{
+	left: 231px;
+}
+
+.menu-open .menu-side{
+	left: 0;
+}
+
+.menu-side,
+.menu{
+	transition: left 0.5s ease;
+}
+
+.menu-side{
+	background: #333;
+	border-right: 1px solid #000;
+	color: #ff;
+	position: fixed;
+	top: 0;
+	left: -231px;
+	width: 210px;
+	height: 100%;
+	padding: 10px;
+}d
+ul li{
+	list-style: none;
+	line-height: 25px;
+	border:2px solid transparent;
+	border-radius:2px 5px 2px 5px;
+	color:#0F3;
+	text-shadow:1px 1px 1px #900;
+}
+ul li:hover {
+	color:#FF0 ;
+}
+/*effects all of the pages */
+.b1 ul li:hover,
+.b2 ul li:hover,
+.b3 ul li:hover,
+.b4 ul li:hover,
+.b5 ul li:hover,
+.b6 ul li:hover,
+.b7 ul li:hover,
+.b8 ul li:hover,
+.b9 ul li:hover {
+	border-color:#0F0;
+}
+.b1 ul a:visited,
+.b2 ul a:visited,
+.b3 ul a:visited,
+.b4 ul a:visited,
+.b5 ul a:visited,
+.b6 ul a:visited,
+.b7 ul a:visited,
+.b8 ul a:visited,
+.b9 ul a:visited {
+	color:#C03;
+	border-color:#090;
+}
+a {
+	color: #C00;
+}
+header a {
+	padding:1em;
+	font-size:2.2em;
+}
+/* all of the links shown on sidte in what ever from they used */
+#links {
+	float:left;d
+	position:absolute;
+	left:2px;
+	background-image:url("../images/background.jpg");
+	padding:1.5em;
+	border-radius:50px 0 50px 0;
+	opacity:0.3;
+	transition:all 0.3s ease;
+	-webkit-transform:translateX(-80px);
+	transform:translateX(-80px);
+}
+/* addes hover efffects */
+#links:hover {
+	transform:translateX(20px);
+	opacity:1;
+}
+/* addes hover effects */
+.pic3 a:hover,
+.pic32 a:hover {
+	-webkit-transform:rotate(360deg);
+	transform:rotate(360deg);
+}
+.pic3 {
+	-webkit-transform:translateY(-20px);
+	transform:translateY(-20px);
+}
+.pic32 {
+	-webkit-transform:translateY(20px);
+	transform:translateY(20px);
+}

@@ -1,0 +1,8 @@
+@charset "UTF-8";
+/* mmi reset so not that many browser defaults used */
+/* CSS Document */
+* {margin:0; padding:0;}
+a img {border:0;}
+a {outline:0;text-decoration:none;}
+h1,h2,h3,h4,h5,h6 {font-weight:normal;}
+em {font-style:normal;}
